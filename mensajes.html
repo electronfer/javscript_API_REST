@@ -1,0 +1,39 @@
+<hr>
+<button class="btnActions" onclick="leerMensajes()">Consultar</button>
+<hr>
+<table>
+    <tr>
+        <th><label class="main_headers">Formulario de registro de Mensajes</label></th>
+        <th><label class="main_headers">Detalles mensaje</label></th>
+    </tr>
+    <tr>
+        <td>
+            <label>ID:</label><br>
+            <input type="number" id="id" placeholder="id"><br>
+            <label>MESSAGE TEXT:</label><br>
+            <input type="text" id="message_text" placeholder="message_text"><br>
+            <button class="btnActions" onclick="guardarInformacionMensajes()">Guardar</button>
+        </td>
+        <td>
+            <div id="update_form_m" style="visibility: hidden;">
+                <label>ID:</label><br>
+                <input type="number" id="id_update" placeholder="id" disabled><br>
+                <label>MESSAGE TEXT:</label><br>
+                <input type="text" id="message_text_update" placeholder="message_text"><br>
+                <button class="btnActions" onclick="actualizarInformacionMensajes()">Actualizar</button>
+            </div>
+        </td>
+    </tr>
+</table>
+<hr>
+<div>
+    <table id="messagesTable" class="style_tables">
+        <tr>
+            <th>ID</th>
+            <th>MESSAGE TEXT</th>
+            <th>BORRAR</th>
+        </tr>
+    </table>
+</div>
+<hr>
+<hr>

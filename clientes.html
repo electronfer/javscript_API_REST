@@ -1,0 +1,49 @@
+<hr>
+<button class="btnActions" onclick="leerClientes()">Consultar</button>
+<hr>
+<table>
+    <tr>
+        <th><label class="main_headers">Formulario de registro de clientes</label></th>
+        <th><label class="main_headers">Detalles cliente</label></th>
+    </tr>
+    <tr>
+        <td>
+            <label>ID:</label><br>
+            <input type="number" id="id" placeholder="id"><br>
+            <label>NAME:</label><br>
+            <input type="text" id="name" placeholder="name"><br>
+            <label>EMAIL:</label><br>
+            <input type="text" id="email" placeholder="email"><br>
+            <label>AGE:</label><br>
+            <input type="number" id="age" placeholder="age"><br>
+            <button class="btnActions" onclick="guardarInformacionClientes()">Guardar</button>
+        </td>
+        <td>
+            <div id="update_form_c" style="visibility: hidden;">
+                <label>ID:</label><br>
+                <input type="number" id="id_update" placeholder="id" disabled><br>
+                <label>NAME:</label><br>
+                <input type="text" id="name_update" placeholder="name"><br>
+                <label>EMAIL:</label><br>
+                <input type="text" id="email_update" placeholder="email"><br>
+                <label>AGE:</label><br>
+                <input type="number" id="age_update" placeholder="age"><br>
+                <button class="btnActions" onclick="actualizarInformacionClientes()">Actualizar</button>
+            </div>
+        </td>
+    </tr>
+</table>
+<hr>
+<div>
+    <table id="clientsTable" class="style_tables">
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>EMAIL</th>
+            <th>AGE</th>
+            <th>BORRAR</th>
+        </tr>
+    </table>
+</div>
+<hr>
+<hr>
